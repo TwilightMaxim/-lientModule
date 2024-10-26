@@ -1,0 +1,22 @@
+﻿<Window x:Class="СlientModule.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:СlientModule"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Получить данные" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="Spisok" HorizontalAlignment="Left" Margin="44,62,0,0" VerticalAlignment="Top" Width="120" >
+            <ComboBoxItem Content="fullName"/>
+            <ComboBoxItem Content="snils"/>
+            <ComboBoxItem Content="inn"/>
+            <ComboBoxItem Content="email"/>
+            <ComboBoxItem Content="identityCard"/>
+        </ComboBox>
+        <Button Content="Получить" HorizontalAlignment="Left" Margin="197,64,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Label Name="Result" Content="" HorizontalAlignment="Left" Margin="31,102,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
